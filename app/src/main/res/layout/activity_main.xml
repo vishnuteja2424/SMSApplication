@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ABFFEF"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Application"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/smsnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SMS NUMBER: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/smsbody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smsnum"
+                android:hint="SMS TEXT: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn"
+                android:background="@drawable/button_bg"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:text="Send SMS"
+                android:textColor="#FF00FF"
+                android:layout_below="@id/smsbody"
+                android:layout_marginTop="45dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>
